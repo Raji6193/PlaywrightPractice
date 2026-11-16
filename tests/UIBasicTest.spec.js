@@ -79,7 +79,7 @@ test.only('Child window handling', async ({ browser }) => {
 
     //When set of lines needs to perform in asynchronous manner(at a time/ together parallely), the listener for the new page should be set up before the action that triggers the new page.
     // We use Promise to wait for the new page to be available after the action that triggers it.
-    //Listen for the new page pending, rejected, fulfilled
+    // Listen for the new page pending, rejected, fulfilled
     // 3 stages of the promise: pending, rejected, fulfilled
     // Untill the array of promises resolves, we cannot move to the next step in the code.
     // when we have 2 more pages const [newPage1, newPage2] = await Promise.all([...])
