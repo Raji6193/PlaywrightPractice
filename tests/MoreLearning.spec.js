@@ -32,6 +32,9 @@ test("Pop up validation", async ({ page }) => {
     const textCheck = await framesPage.locator(".text h2").textContent();
     console.log(textCheck.split(" ")[1]);
 
+    // switch back to the main page context
+    await page.locator("#name").fill("Test Name"); // interacting with an element on the main page after switching back
+
 
     await page.pause(); // to pause the execution and inspect the page if needed
 })

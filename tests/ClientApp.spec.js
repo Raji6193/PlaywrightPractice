@@ -31,6 +31,7 @@ test.only('Client App Login', async ({ page }) => {
     }
 
     await page.locator("[routerlink*='cart']").click();
+    await page.pause;
     // isVisible willnot wait for the standard given time. So we need to apply some wait for 
     // waitFor willnot work for multiple elements, it only waits for the first matching element
     await page.locator("div li").first().waitFor();
