@@ -17,7 +17,7 @@ const config = {
     navigationTimeout: 30 * 1000,
     // Maximum time for page navigation
     browserName: 'chromium',
-    headless: false,
+    headless: true,
     screenshot: 'on',
     // Takes screenshots for every actions performed during the test
     trace: 'retain-on-failure' //off, on
