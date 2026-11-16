@@ -1,5 +1,8 @@
 const { test, expect } = require('@playwright/test');
 
+// to run all tests use the command: npx playwright test
+// to run a specific test file use the command: npx playwright test <filename>
+//
 // to run tests in a UI interface use the command: npx playwright test --ui
 // to run tests in debug mode use the command: npx playwright test <filename> --debug
 // to run the browser using codegen use the command: npx playwright codegen <url> 

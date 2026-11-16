@@ -20,10 +20,10 @@ const config = {
     headless: false,
     screenshot: 'on',
     // Takes screenshots for every actions performed during the test
-    trace: 'on'
+    trace: 'retain-on-failure' //off, on
+    // Retains trace only on test failure, trace: 'on' would retain for all tests
     // Enables tracing for the test, useful for debugging
     // Note: Both screenshot and trace options can generate a lot of data, so use them judiciously during test runs 
-
   }
 };
 
